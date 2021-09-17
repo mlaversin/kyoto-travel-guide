@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -290,6 +291,12 @@ nav {
   margin: 35px auto;
   cursor: pointer;
   display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+.block button:hover {
+  background: rgb(177, 0, 36);
+  color: #fff;
 }
 
 .block-right {
@@ -627,7 +634,7 @@ nav {
   border: none;
   outline: none;
   background: none;
-  border-bottom: 3px solid #aaa;
+  border-bottom: 2px solid #aaa;
   color: #666;
   font-size: 20px;
 }
@@ -636,7 +643,7 @@ textarea {
   width: 100%;
   height: 200px;
   border: none;
-  border: 3px solid #aaa;
+  border: 2px solid #aaa;
   border-radius: 3px;
   padding: 5px;
   resize: none;
@@ -656,15 +663,8 @@ textarea {
   display: block;
   width: auto;
   padding: 15px 60px;
-  border: 3px solid rgb(144, 144, 144);
+  border: 2px solid rgb(144, 144, 144);
   border-radius: 9999px;
-  background-image: linear-gradient(
-    to right,
-    transparent 50%,
-    rgb(65, 65, 65) 50%,
-    rgb(134, 134, 134)
-  );
-  background-size: 200%;
   color: #333;
   font-size: 24px;
   font-weight: 500;
@@ -673,9 +673,9 @@ textarea {
 }
 
 .form-group .button-sub:hover {
-  color: #fff;
-  background-position: 100%;
-  border: 3px solid #fff;
+  background: #333;
+  color: #f1f1f1;
+  border: 2px solid #333;
 }
 
 @media screen and (max-width: 1300px) {
